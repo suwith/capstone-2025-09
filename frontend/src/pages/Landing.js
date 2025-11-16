@@ -307,7 +307,7 @@ const Landing = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.3, duration: 0.6 }}
             >
-              나만의 AI 보이스를
+              목소리를 저장하다.
             </motion.h1>
             <motion.h1
               className="text-4xl font-bold mb-10"
@@ -325,7 +325,7 @@ const Landing = () => {
             >
               <GradientButton
                 aria-label="start"
-                onClick={() => navigate(user ? '/voice-store' : '/sign-in')}
+                onClick={() => navigate(user ? '/voice-create' : '/sign-in')}
                 className="text-lg py-3 px-8 hover:scale-105 transition-transform"
               >
                 COVOS 시작하기

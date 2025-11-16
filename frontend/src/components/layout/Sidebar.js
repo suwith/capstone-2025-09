@@ -65,13 +65,13 @@ const Sidebar = () => {
         {/*  <ShoppingBag size={20} />*/}
         {/*  <span>마켓플레이스</span>*/}
         {/*</Link>*/}
-        {/*<Link*/}
-        {/*  to="/basic-voice"*/}
-        {/*  className={`flex items-center space-x-2 p-2 rounded ${isActive('/basic-voice')}`}*/}
-        {/*>*/}
-        {/*  <AudioLines size={20} />*/}
-        {/*  <span>베이직 보이스</span>*/}
-        {/*</Link>*/}
+        <Link
+          to="/basic-voice"
+          className={`flex items-center space-x-2 p-2 rounded ${isActive('/basic-voice')}`}
+        >
+          <AudioLines size={20} />
+          <span>베이직 보이스</span>
+        </Link>
         {/*<Link*/}
         {/*  to="/ai-assistant"*/}
         {/*  className={`flex items-center space-x-2 p-2 rounded ${isActive('/ai-assistant')}`}*/}

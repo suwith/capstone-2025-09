@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Layout from './components/layout/Layout';
 import Landing from './pages/Landing';
 import ProtectedRoute from './components/layout/ProtectedRoute';
+import MyVoice from './pages/MyVoice';
 
 // Lazy-loaded 페이지 컴포넌트
 const SignIn = lazy(() => import('./pages/SignIn'));
@@ -37,6 +38,7 @@ function App() {
               <Route path="/mypage" element={<MyPage />} />
               <Route path="/quote" element={<Quote />} />
               <Route path="/remember-voice" element={<RememberVoice />} />
+              <Route path="/my-voice" element={<MyVoice />} />
             </Route>
 
             <Route path="*" element={<div>잘못된 접근입니다.</div>} />
