@@ -8,6 +8,7 @@ import {
   AudioLines,
   Quote,
   BookUser,
+  Folder,
 } from 'lucide-react';
 import logo from '../../assets/logo-new.svg';
 import useUserStore from '../../utils/userStore';
@@ -51,40 +52,47 @@ const Sidebar = () => {
           <span>보이스팩 생성</span>
         </Link>
         <Link
-          to="/voice-store"
-          className={`flex items-center space-x-2 p-2 rounded ${isActive('/voice-store')}`}
+          to="/my-voice"
+          className={`flex items-center space-x-2 p-2 rounded ${isActive('/my-voice')}`}
         >
-          <ShoppingBag size={20} />
-          <span>마켓플레이스</span>
+          <Folder size={20} />
+          <span>보이스팩 보관함</span>
         </Link>
-        <Link
-          to="/basic-voice"
-          className={`flex items-center space-x-2 p-2 rounded ${isActive('/basic-voice')}`}
-        >
-          <AudioLines size={20} />
-          <span>베이직 보이스</span>
-        </Link>
-        <Link
-          to="/ai-assistant"
-          className={`flex items-center space-x-2 p-2 rounded ${isActive('/ai-assistant')}`}
-        >
-          <BotMessageSquare size={20} />
-          <span>AI 리포터</span>
-        </Link>
-        <Link
-          to="/quote"
-          className={`flex items-center space-x-2 p-2 rounded ${isActive('/quote')}`}
-        >
-          <Quote size={20} />
-          <span>오늘의 명언</span>
-        </Link>
-        <Link
-          to="/remember-voice"
-          className={`flex items-center space-x-2 p-2 rounded ${isActive('/remember-voice')}`}
-        >
-          <BookUser size={20} />
-          <span>리멤버 보이스</span>
-        </Link>
+        {/*<Link*/}
+        {/*  to="/voice-store"*/}
+        {/*  className={`flex items-center space-x-2 p-2 rounded ${isActive('/voice-store')}`}*/}
+        {/*>*/}
+        {/*  <ShoppingBag size={20} />*/}
+        {/*  <span>마켓플레이스</span>*/}
+        {/*</Link>*/}
+        {/*<Link*/}
+        {/*  to="/basic-voice"*/}
+        {/*  className={`flex items-center space-x-2 p-2 rounded ${isActive('/basic-voice')}`}*/}
+        {/*>*/}
+        {/*  <AudioLines size={20} />*/}
+        {/*  <span>베이직 보이스</span>*/}
+        {/*</Link>*/}
+        {/*<Link*/}
+        {/*  to="/ai-assistant"*/}
+        {/*  className={`flex items-center space-x-2 p-2 rounded ${isActive('/ai-assistant')}`}*/}
+        {/*>*/}
+        {/*  <BotMessageSquare size={20} />*/}
+        {/*  <span>AI 리포터</span>*/}
+        {/*</Link>*/}
+        {/*<Link*/}
+        {/*  to="/quote"*/}
+        {/*  className={`flex items-center space-x-2 p-2 rounded ${isActive('/quote')}`}*/}
+        {/*>*/}
+        {/*  <Quote size={20} />*/}
+        {/*  <span>오늘의 명언</span>*/}
+        {/*</Link>*/}
+        {/*<Link*/}
+        {/*  to="/remember-voice"*/}
+        {/*  className={`flex items-center space-x-2 p-2 rounded ${isActive('/remember-voice')}`}*/}
+        {/*>*/}
+        {/*  <BookUser size={20} />*/}
+        {/*  <span>리멤버 보이스</span>*/}
+        {/*</Link>*/}
       </div>
 
       {/* 하단: 로그아웃 버튼 */}
