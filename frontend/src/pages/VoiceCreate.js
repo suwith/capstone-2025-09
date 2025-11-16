@@ -442,23 +442,23 @@ const VoiceCreate = () => {
         {/*  </div>*/}
         {/*</div>*/}
 
-        {/* 사용자 지정 카테고리 입력 */}
-        <div>
-          <label className="text-l font-bold text-gray-900 mb-2 block">
-            카테고리 태그{' '}
-            <span className="text-gray-600 text-sm font-normal">
-              (1개 선택)
-            </span>
-          </label>
-          <div className="w-64 mb-6">
-            <SelectBox
-              value={customCategory}
-              onChange={(value) => setCustomCategory(value)}
-              options={categoryOptions}
-              placeholder="카테고리를 선택해주세요."
-            />
-          </div>
-        </div>
+      {/*  /!* 사용자 지정 카테고리 입력 *!/*/}
+      {/*  <div>*/}
+      {/*    <label className="text-l font-bold text-gray-900 mb-2 block">*/}
+      {/*      카테고리 태그{' '}*/}
+      {/*      <span className="text-gray-600 text-sm font-normal">*/}
+      {/*        (1개 선택)*/}
+      {/*      </span>*/}
+      {/*    </label>*/}
+      {/*    <div className="w-64 mb-6">*/}
+      {/*      <SelectBox*/}
+      {/*        value={customCategory}*/}
+      {/*        onChange={(value) => setCustomCategory(value)}*/}
+      {/*        options={categoryOptions}*/}
+      {/*        placeholder="카테고리를 선택해주세요."*/}
+      {/*      />*/}
+      {/*    </div>*/}
+      {/*  </div>*/}
       </div>
 
       <div className="flex flex-col mb-2">

@@ -213,21 +213,21 @@ const VoicePackModal = ({
             <h2 className="text-base sm:text-lg md:text-xl font-bold text-left">
               {pack.name}
             </h2>
-            <p className="text-[11px] sm:text-sm text-slate-600 text-left">
-              {pack.authorName}
-            </p>
+            {/*<p className="text-[11px] sm:text-sm text-slate-600 text-left">*/}
+            {/*  {pack.authorName}*/}
+            {/*</p>*/}
 
-            <div className="flex justify-start gap-2 mt-2 flex-wrap">
-              {Array.isArray(pack.categories) &&
-                pack.categories.slice(0, 2).map((category, index) => (
-                  <span
-                    key={index}
-                    className="text-sm px-3 py-1 bg-indigo-100 text-indigo-700 rounded-lg"
-                  >
-                    # {category}
-                  </span>
-                ))}
-            </div>
+            {/*<div className="flex justify-start gap-2 mt-2 flex-wrap">*/}
+            {/*  {Array.isArray(pack.categories) &&*/}
+            {/*    pack.categories.slice(0, 2).map((category, index) => (*/}
+            {/*      <span*/}
+            {/*        key={index}*/}
+            {/*        className="text-sm px-3 py-1 bg-indigo-100 text-indigo-700 rounded-lg"*/}
+            {/*      >*/}
+            {/*        # {category}*/}
+            {/*      </span>*/}
+            {/*    ))}*/}
+            {/*</div>*/}
 
             {/* 버튼 조건 처리 */}
             {showBuyButton && (
@@ -249,11 +249,11 @@ const VoicePackModal = ({
             )}
 
             {/* 이미 보유한 경우 메시지 */}
-            {!showBuyButton && isVoicestore && (
-              <p className="mt-6 text-sm text-indigo-400 font-medium">
-                이미 보유한 보이스팩입니다.
-              </p>
-            )}
+            {/*{!showBuyButton && isVoicestore && (*/}
+            {/*  <p className="mt-6 text-sm text-indigo-400 font-medium">*/}
+            {/*    이미 보유한 보이스팩입니다.*/}
+            {/*  </p>*/}
+            {/*)}*/}
 
             {showEditDelete && (
               <>
