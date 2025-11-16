@@ -78,23 +78,23 @@ const VoicePack = ({ pack, type = 'voicestore', onRefresh }) => {
           {formatDate(pack.createdAt)}
         </p>
 
-        <div className="flex justify-center gap-2 mt-2 flex-wrap">
-          {Array.isArray(pack.categories) &&
-            pack.categories.slice(0, 2).map((category, index) => (
-              <span
-                key={index}
-                className={`${
-                  isDashboard
-                    ? 'text-[10px] px-1.5 py-0.5'
-                    : isMypage
-                      ? 'text-[10px] px-1 py-0.5'
-                      : 'text-sm px-3 py-1'
-                } bg-indigo-100 text-indigo-700 rounded-lg`}
-              >
-                # {category}
-              </span>
-            ))}
-        </div>
+        {/*<div className="flex justify-center gap-2 mt-2 flex-wrap">*/}
+        {/*  {Array.isArray(pack.categories) &&*/}
+        {/*    pack.categories.slice(0, 2).map((category, index) => (*/}
+        {/*      <span*/}
+        {/*        key={index}*/}
+        {/*        className={`${*/}
+        {/*          isDashboard*/}
+        {/*            ? 'text-[10px] px-1.5 py-0.5'*/}
+        {/*            : isMypage*/}
+        {/*              ? 'text-[10px] px-1 py-0.5'*/}
+        {/*              : 'text-sm px-3 py-1'*/}
+        {/*        } bg-indigo-100 text-indigo-700 rounded-lg`}*/}
+        {/*      >*/}
+        {/*        # {category}*/}
+        {/*      </span>*/}
+        {/*    ))}*/}
+        {/*</div>*/}
       </div>
 
       {isModalOpen && (

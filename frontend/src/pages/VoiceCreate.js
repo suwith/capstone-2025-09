@@ -30,7 +30,7 @@ const VoiceCreate = () => {
   const [convertedAudioUrl, setConvertedAudioUrl] = useState('');
   const [voicepackId, setVoicepackId] = useState(null);
   const [imageFile, setImageFile] = useState(null);
-  const [genderCategory, setGenderCategory] = useState('');
+  const [genderCategory, setGenderCategory] = useState('기타');
   const [customCategory, setCustomCategory] = useState('');
   const navigate = useNavigate();
   const user = useUserStore((state) => state.user);
@@ -418,29 +418,29 @@ const VoiceCreate = () => {
       />
 
       <div className="flex flex-row space-x-8">
-        {/* 성별 카테고리 선택 */}
-        <div>
-          <label className="text-l font-bold text-gray-900 mb-2 block">
-            보이스팩 성별 <span className="text-red-500">*</span>
-          </label>
-          <div className="flex space-x-2 mb-6">
-            {['남자', '여자', '기타'].map((gender) => (
-              <button
-                aria-label="성별 선택"
-                key={gender}
-                type="button"
-                onClick={() => setGenderCategory(gender)}
-                className={`px-4 py-2 rounded-lg text-sm border transition ${
-                  genderCategory === gender
-                    ? 'bg-indigo-500 text-white border-indigo-500'
-                    : 'bg-white text-gray-700 border-gray-300 hover:bg-indigo-100'
-                }`}
-              >
-                {gender}
-              </button>
-            ))}
-          </div>
-        </div>
+        {/*/!* 성별 카테고리 선택 *!/*/}
+        {/*<div>*/}
+        {/*  <label className="text-l font-bold text-gray-900 mb-2 block">*/}
+        {/*    보이스팩 성별 <span className="text-red-500">*</span>*/}
+        {/*  </label>*/}
+        {/*  <div className="flex space-x-2 mb-6">*/}
+        {/*    {['남자', '여자', '기타'].map((gender) => (*/}
+        {/*      <button*/}
+        {/*        aria-label="성별 선택"*/}
+        {/*        key={gender}*/}
+        {/*        type="button"*/}
+        {/*        onClick={() => setGenderCategory(gender)}*/}
+        {/*        className={`px-4 py-2 rounded-lg text-sm border transition ${*/}
+        {/*          genderCategory === gender*/}
+        {/*            ? 'bg-indigo-500 text-white border-indigo-500'*/}
+        {/*            : 'bg-white text-gray-700 border-gray-300 hover:bg-indigo-100'*/}
+        {/*        }`}*/}
+        {/*      >*/}
+        {/*        {gender}*/}
+        {/*      </button>*/}
+        {/*    ))}*/}
+        {/*  </div>*/}
+        {/*</div>*/}
 
         {/* 사용자 지정 카테고리 입력 */}
         <div>

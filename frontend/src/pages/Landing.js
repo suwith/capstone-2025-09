@@ -307,7 +307,7 @@ const Landing = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.3, duration: 0.6 }}
             >
-              목소리를 저장하다.
+              당신의 목소리가
             </motion.h1>
             <motion.h1
               className="text-4xl font-bold mb-10"
@@ -315,7 +315,7 @@ const Landing = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.5, duration: 0.6 }}
             >
-              만들고 공유하고 활용하세요
+              시간이 지나도 머물 수 있게
             </motion.h1>
 
             <motion.div

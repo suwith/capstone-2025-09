@@ -135,9 +135,7 @@ const MyVoice = () => {
                     <VoicePack
                       key={pack.id}
                       pack={pack}
-                      type="mypage"
-                      filter="mine"
-                      onRefresh={handleRefresh}
+                      type="voicestore"
                     />
                   ))
                 )}
