@@ -339,7 +339,7 @@ const VoiceCreate = () => {
                   try {
                     await makePublic(voicepackId);
                     alert('보이스팩이 생성되었습니다!');
-                    navigate('/voice-store');
+                    navigate('/my-voice');
                   } catch (err) {
                     console.error('공개 실패:', err);
                     alert('보이스 공개에 실패했습니다.');
