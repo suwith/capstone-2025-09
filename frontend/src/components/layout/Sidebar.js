@@ -9,6 +9,7 @@ import {
   Quote,
   BookUser,
   Folder,
+  Handshake
 } from 'lucide-react';
 import logo from '../../assets/logo-new.svg';
 import useUserStore from '../../utils/userStore';
@@ -93,6 +94,15 @@ const Sidebar = () => {
         {/*  <BookUser size={20} />*/}
         {/*  <span>리멤버 보이스</span>*/}
         {/*</Link>*/}
+        <a
+          href="https://sprout-angle-4de.notion.site/partnership?source=copy_link"
+          target="_blank"
+          rel="noopener noreferrer"
+          className={`flex items-center space-x-2 p-2 rounded text-gray-400 no-underline ${isActive('/partnership')}`}
+        >
+          <Handshake size={20} />
+          <span>제휴 문의</span>
+        </a>
       </div>
 
       {/* 하단: 로그아웃 버튼 */}
